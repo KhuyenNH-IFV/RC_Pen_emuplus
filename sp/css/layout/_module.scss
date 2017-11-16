@@ -12,6 +12,7 @@ body {
     @extend %clearfix;
 }
 #container {
+    overflow: hidden;
     position: relative;
     background: #fff;
     max-width: 780px;
@@ -51,7 +52,8 @@ body {
 }
 
 .noteAds, .note {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-align: left;
 }
 .ctrbtn {
     width: 64.8rem;

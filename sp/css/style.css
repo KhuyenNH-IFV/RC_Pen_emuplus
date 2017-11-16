@@ -65,6 +65,7 @@ body {
 }
 
 #container {
+  overflow: hidden;
   position: relative;
   background: #fff;
   max-width: 780px;
@@ -94,7 +95,8 @@ body {
 }
 
 .noteAds, .note {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .ctrbtn {
@@ -295,7 +297,7 @@ body {
 /* local_02
 ------------------------------------*/
 .local_02 .title_h2 {
-  padding: 3.8rem 0 4rem;
+  padding: 8.6rem 0 5.6rem;
 }
 
 .local_02 .textNews {
@@ -324,7 +326,7 @@ body {
 }
 
 .local_02 .wrapListNews {
-  padding: 8rem 4rem;
+  padding: 5.5rem 4rem;
   background: url("../image/background_01.png") no-repeat center 24rem;
   min-height: 200.1rem;
 }
@@ -349,6 +351,10 @@ body {
   padding-bottom: 3rem;
 }
 
+.local_02 .wrapListNews .listNews .note {
+  padding-top: 1rem;
+}
+
 .local_02 .textNews {
   width: 100%;
   max-width: 37rem;
@@ -371,12 +377,13 @@ body {
 }
 
 .local_03 + .ctrbtn {
-  padding: 10rem 0 5.4rem;
+  padding: 6rem 0 5.4rem;
 }
 
 /* local_04
 ------------------------------------*/
 .local_04 {
+  padding-top: 3.8rem;
   background: url("../image/background_02.png") no-repeat center 23rem;
   padding-bottom: 11.3rem;
 }
@@ -395,12 +402,13 @@ body {
 }
 
 .local_04 .wrapList .listFade01:first-child .desFade {
+  margin-top: 2.3rem;
   margin-left: 1rem;
 }
 
 .local_04 .wrapList .listFade01:nth-child(2) .itemsFade {
   margin-left: 1rem;
-  margin-top: -6.9rem;
+  margin-top: -6rem;
 }
 
 .local_04 .wrapList .listFade01:nth-child(3) {
@@ -412,7 +420,7 @@ body {
 }
 
 .local_04 .wrapList .listFade01:nth-child(4) {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .local_04 .wrapList .listFade01:nth-child(4) .itemsFade {
@@ -449,15 +457,13 @@ body {
   background: url("../image/background_03.png") no-repeat center;
 }
 
-.local_05 .local_05_content + .noteAds {
-  padding-top: .9rem;
-  padding-left: 9rem;
+.local_05 .local_05_content .noteAds {
+  padding: 1.5rem 0 3.5rem;
 }
 
 .local_05 .listAds01 {
   position: relative;
-  padding-left: 4.5rem;
-  padding-bottom: 28.7rem;
+  padding: 0 3.5rem 28.7rem 3.5rem;
 }
 
 .local_05 .listAds01 .title_h3 {
@@ -494,7 +500,7 @@ body {
 .local_05 .listAds02 .title_h3 {
   position: relative;
   top: -2.7rem;
-  left: -5rem;
+  left: -5.2rem;
 }
 
 .local_05 .listAds02 .textAds {
@@ -515,19 +521,22 @@ body {
   display: inline;
 }
 
-.local_05 .listAds02 + .noteAds {
-  padding-top: .9rem;
-  padding-left: 9rem;
+.local_05 .listAds02 .noteAds {
+  padding-top: 1.5rem;
 }
 
 .local_05 + .arrow {
-  padding: 7.5rem 0 1.2rem;
+  padding: 12rem 0 0;
 }
 
 /* local_06
 ------------------------------------*/
 .local_06 .title_h3 {
-  padding-top: 4.5rem;
+  padding-top: 5.5rem;
+}
+
+.local_06 .img_main {
+  padding: 2.7rem 0 3rem;
 }
 
 .local_06 .listItems .contentItems {
@@ -571,15 +580,11 @@ body {
 }
 
 .local_07 + .ctrbtn {
-  padding: 8.2rem 0 7.7rem;
+  padding: 9rem 0;
 }
 
 /* local_08
 ------------------------------------*/
-.local_08 {
-  padding-bottom: 8rem;
-}
-
 .local_08 .first {
   position: relative;
   z-index: 9;
@@ -590,18 +595,17 @@ body {
   z-index: 5;
 }
 
+.local_08 .three {
+  padding-top: 10px;
+}
+
 .local_08 .local_08_content {
   position: relative;
-  width: 100%;
-  max-width: 80rem;
-  margin: auto;
-  margin-top: -15rem;
-  background: #ffffff;
-  padding: 13rem 3.7rem 0 3.7rem;
+  padding: 0 3.7rem;
 }
 
 .local_08 .local_08_content .title_B {
-  padding: 3rem 0 2.5rem;
+  padding: 7rem 0 2.5rem;
 }
 
 .local_08 .local_08_content .note {
@@ -610,18 +614,22 @@ body {
 }
 
 .local_08 .local_08_content .imgThumb {
-  position: absolute;
-  right: 2rem;
-  top: 37rem;
+  position: relative;
+  text-align: center;
+  padding: 3.1rem 0 7.5rem;
+}
+
+.local_08 .listItems {
+  padding: 0 2.6rem;
 }
 
 .local_08 .listItems li {
   float: left;
-  width: 45%;
+  width: 48%;
 }
 
-.local_08 .listItems li:not(:last-child) {
-  margin-right: 5%;
+.local_08 .listItems li:nth-child(odd) {
+  margin-right: 4%;
 }
 
 .local_08 .listItems .title_h4 {
@@ -644,33 +652,33 @@ body {
 }
 
 .local_08 .title_bottom {
-  padding: 5.7rem 0 2rem;
+  padding: 8rem 0 2.6rem;
   margin-left: -1.3rem;
 }
 
 /* local_09
 ------------------------------------*/
 .local_09 .title_h2.first {
-  padding-top: 4.3rem;
-  padding-bottom: 5.2rem;
-}
-
-.local_09 .title_h2.second {
-  margin-left: -3.4rem;
-  padding-top: 1.6rem;
+  padding-top: 8rem;
+  padding-bottom: 7.6rem;
 }
 
 .local_09 .listItems {
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-  padding-left: 10.5rem;
+  padding-left: 3.8rem;
 }
 
 .local_09 .listItems .items {
   float: left;
 }
 
+.local_09 .listItems .text {
+  padding-right: 3rem;
+  text-align: justify;
+}
+
 .local_09 .listItems .avatar {
-  padding-left: 4.3rem;
+  float: left;
 }
 
 .local_09 + .arrow {
@@ -679,6 +687,10 @@ body {
 
 /* local_10
 ------------------------------------*/
+.local_10 .listFade {
+  padding-top: 1.5rem;
+}
+
 .local_10 .listFade li {
   float: left;
 }
@@ -694,24 +706,25 @@ body {
 }
 
 .local_11 .listItems {
-  padding-top: 1.8rem;
-  padding-left: 8rem;
+  padding-top: 2rem;
+}
+
+.local_11 .items {
+  padding: 0 6.8rem 0 7.3rem;
 }
 
 .local_11 .avatar {
-  float: left;
+  padding-top: 4rem;
+  text-align: center;
 }
 
-.local_11 .avatar.arrowstep {
-  padding-bottom: 5.5rem;
+.local_11 .arrowstep {
+  padding-bottom: 10rem;
   background: url("../image/arrow_step.png") no-repeat bottom;
 }
 
 .local_11 .description {
-  float: left;
-  width: 100%;
-  max-width: 38.7rem;
-  margin-left: 4.5rem;
+  padding-top: 3.5rem;
 }
 
 .local_11 .description .title_h4 {
@@ -728,25 +741,24 @@ body {
 
 .local_11 .check_point {
   margin-left: 2.1rem;
-  padding: 3.4rem 0 2rem;
+  padding: 3rem 0 4.5rem;
 }
 
 .local_11 + .arrow {
-  padding-top: 5rem;
+  padding-top: 12rem;
 }
 
 /* local_12
 ------------------------------------*/
 .local_12 {
-  background: url("../image/background_02.png") no-repeat center 7.3rem;
+  margin-top: 10rem;
+  background: url("../image/background_06.png") no-repeat center 7.3rem;
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  padding: 0 3.4rem;
 }
 
 .local_12 .news01 {
   background: #ffffff;
-  width: 100%;
-  max-width: 84.2rem;
-  margin: auto;
   position: relative;
   padding: 1.8rem;
   -webkit-box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.5);
@@ -755,13 +767,11 @@ body {
 
 .local_12 .news01 .text {
   padding-top: 3.8rem;
-  width: 31.5rem;
 }
 
 .local_12 .news01 .imgThumb {
-  position: absolute;
-  right: -1.4rem;
-  bottom: 0.2rem;
+  position: relative;
+  right: -4rem;
 }
 
 .local_12 span {
@@ -775,14 +785,12 @@ body {
 }
 
 .local_12 .listItems {
-  padding-top: 4rem;
-  width: 100%;
-  max-width: 84.2rem;
+  padding-top: 4.5rem;
   margin: auto;
 }
 
 .local_12 .listItems + .note {
-  padding: 2rem 0 2.5rem 6.2rem;
+  padding: 2rem 0 2.5rem 0rem;
 }
 
 .local_12 .title_h3 {
@@ -792,19 +800,12 @@ body {
 .local_12 .items {
   -webkit-box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.6);
-  float: left;
-  width: 100%;
-  max-width: 40.6rem;
   background: #ffffff;
   padding: 1.8rem 1.4rem;
 }
 
-.local_12 .items:nth-child(even) {
-  margin-left: 3rem;
-}
-
-.local_12 .items:nth-child(-n+2) {
-  margin-bottom: 2.7rem;
+.local_12 .items:nth-child(-n+3) {
+  margin-bottom: 4.6rem;
 }
 
 .local_12 .items .text {
@@ -812,7 +813,8 @@ body {
 }
 
 .local_12 .note {
-  font-size: 0.96rem;
+  font-size: 1.4rem;
+  letter-spacing: 0;
 }
 
 .local_12 .note2 {
@@ -886,6 +888,10 @@ body {
   display: none;
 }
 
+.inline {
+  display: inline !important;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -914,32 +920,23 @@ body {
   border: 0 !important;
 }
 
-.pb-40 {
-  padding-bottom: 4rem;
-}
-
-.pt-40 {
-  padding-top: 4rem;
-}
-
-.minH-307 {
-  min-height: 30.7rem;
-}
-
-.ml--17 {
-  margin-left: -1.7rem;
+.pb-25 {
+  padding-bottom: 2.5rem;
 }
 
 .w398 {
-  width: 39.8rem;
+  width: 100%;
+  max-width: 39.8rem;
 }
 
 .w435 {
-  width: 43.5rem;
+  width: 100%;
+  max-width: 43.5rem;
 }
 
-.w422 {
-  width: 42.2rem;
+.w383 {
+  width: 100%;
+  max-width: 38.3rem;
 }
 
 /*-----------------------

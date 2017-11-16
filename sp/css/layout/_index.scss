@@ -69,7 +69,7 @@
 ------------------------------------*/
 .local_02 {
     .title_h2 {
-        padding: 3.8rem 0 4rem;
+        padding: 8.6rem 0 5.6rem;
     }
     .textNews {
         font-size: 2.8rem;
@@ -92,7 +92,7 @@
         }
     }
     .wrapListNews {
-        padding: 8rem 4rem;
+        padding: 5.5rem 4rem;
         background: url('../image/background_01.png') no-repeat center 24rem;
         min-height: 200.1rem;
         .title_h3 {
@@ -112,6 +112,9 @@
                     border-bottom: .1rem solid $color-primary;
                     padding-bottom: 3rem;
                 }
+            }
+            .note {
+                padding-top: 1rem;
             }
         }
     }
@@ -133,12 +136,13 @@
         top: 40%;
     }
     + .ctrbtn {
-        padding: 10rem 0 5.4rem;
+        padding: 6rem 0 5.4rem;
     }
 }
 /* local_04
 ------------------------------------*/
 .local_04 {
+    padding-top: 3.8rem;
     // margin-top: 11.5rem;
     background: url('../image/background_02.png') no-repeat center 23rem;
     padding-bottom: 11.3rem;
@@ -154,13 +158,14 @@
             @extend %clearfix;
             &:first-child {
                 .desFade {
+                    margin-top: 2.3rem;
                     margin-left: 1rem;
                 }
             }
             &:nth-child(2) {
                 .itemsFade {
                     margin-left: 1rem;
-                    margin-top: -6.9rem;
+                    margin-top: -6rem;
                 }
             }
             &:nth-child(3) {
@@ -170,7 +175,7 @@
                 }
             }
             &:nth-child(4) {
-                margin-top: 3rem;
+                margin-top: 2.5rem;
                 .itemsFade {
                     position: absolute;
                     top: -1.2rem;
@@ -203,16 +208,14 @@
         position: relative;
         // margin-top: -2.4rem;
         background: url('../image/background_03.png') no-repeat center;
-        + .noteAds {
-            padding-top: .9rem;
-            padding-left: 9rem;
+        .noteAds {
+            padding: 1.5rem 0 3.5rem;
         }
     }
     .listAds01 {
         position: relative;
-        padding-left: 4.5rem;
         @extend %clearfix;
-        padding-bottom: 28.7rem;
+        padding: 0 3.5rem 28.7rem 3.5rem;
         .title_h3 {
             padding: 3.7rem 0 2.6rem;
         }
@@ -244,7 +247,7 @@
         .title_h3 {
             position: relative;
             top: -2.7rem;
-            left: -5rem;
+            left: -5.2rem;
         }
         .textAds {
             padding: 0 8rem 0 10rem;
@@ -260,20 +263,22 @@
                 font-size: 1.2rem;
             }
         }
-        + .noteAds {
-            padding-top: .9rem;
-            padding-left: 9rem;
+        .noteAds {
+            padding-top: 1.5rem;
         }
     }
     + .arrow {
-        padding: 7.5rem 0 1.2rem;
+        padding: 12rem 0 0;
     }
 }
 /* local_06
 ------------------------------------*/
 .local_06 {
     .title_h3 {
-        padding-top: 4.5rem;
+        padding-top: 5.5rem;
+    }
+    .img_main {
+        padding: 2.7rem 0 3rem;
     }
     .listItems {
         .contentItems {
@@ -315,14 +320,13 @@
 .local_07 {
     padding-top: 10rem;
     + .ctrbtn {
-        padding: 8.2rem 0 7.7rem;
+        padding: 9rem 0;
     }
 }
 /* local_08
 ------------------------------------*/
 .local_08 {
     // background: url("../image/background_05.png")no-repeat center 72rem;
-    padding-bottom: 8rem;
     .first {
         position: relative;
         z-index: 9;
@@ -331,35 +335,34 @@
         position: relative;
         z-index: 5;
     }
+    .three {
+        padding-top: 10px;
+    }
     .local_08_content {
         position: relative;
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        margin-top: -15rem;
-        background: $color-a;
-        padding: 13rem 3.7rem 0 3.7rem;
+        padding: 0 3.7rem;
         .title_B {
-            padding: 3rem 0 2.5rem;
+            padding: 7rem 0 2.5rem;
         }
         .note {
             display: block;
             text-align: right;
         }
         .imgThumb {
-            position: absolute;
-            right: 2rem;
-            top: 37rem;
+            position: relative;
+            text-align: center;
+            padding: 3.1rem 0 7.5rem;
         }
     }
     .listItems {
+        padding: 0 2.6rem;
         // margin-left: -2rem;
         li {
             float: left;
             // width: 20.9rem;
-            width: 45%;
-            &:not(:last-child){
-                margin-right: 5%;
+            width: 48%;
+            &:nth-child(odd) {
+                margin-right: 4%;
             }
         }
         .title_h4 {
@@ -381,7 +384,7 @@
         }
     }
     .title_bottom {
-        padding: 5.7rem 0 2rem;
+        padding: 8rem 0 2.6rem;
         margin-left: -1.3rem;
     }
 }
@@ -390,23 +393,22 @@
 .local_09 {
     .title_h2 {
         &.first {
-            padding-top: 4.3rem;
-            padding-bottom: 5.2rem;
-        }
-        &.second {
-            margin-left: -3.4rem;
-            padding-top: 1.6rem;
+            padding-top: 8rem;
+            padding-bottom: 7.6rem;
         }
     }
-
     .listItems {
         font-family: $font-micho;
-        padding-left: 10.5rem;
+        padding-left: 3.8rem;
         .items {
             float: left;
         }
+        .text {
+            padding-right: 3rem;
+            text-align: justify;
+        }
         .avatar {
-            padding-left: 4.3rem;
+            float: left;
         }
     }
     + .arrow {
@@ -418,6 +420,7 @@
 .local_10 {
     .listFade {
         @extend %clearfix;
+        padding-top: 1.5rem;
         li {
             float: left;
         }
@@ -431,24 +434,22 @@
 .local_11 {
     background: url('../image/background_05.png') no-repeat center;
     .listItems {
-        padding-top: 1.8rem;
-        padding-left: 8rem;
+        padding-top: 2rem;
     }
     .items {
+        padding: 0 6.8rem 0 7.3rem;
         @extend %clearfix;
     }
     .avatar {
-        float: left;
-        &.arrowstep {
-            padding-bottom: 5.5rem;
-            background: url('../image/arrow_step.png') no-repeat bottom;
-        }
+        padding-top: 4rem;
+        text-align: center;
+    }
+    .arrowstep {
+        padding-bottom: 10rem;
+        background: url('../image/arrow_step.png') no-repeat bottom;
     }
     .description {
-        float: left;
-        width: 100%;
-        max-width: 38.7rem;
-        margin-left: 4.5rem;
+        padding-top: 3.5rem;
         .title_h4 {
             font-weight: bold;
             font-family: "Minchou";
@@ -462,33 +463,30 @@
     }
     .check_point {
         margin-left: 2.1rem;
-        padding: 3.4rem 0 2rem;
+        padding: 3rem 0 4.5rem;
     }
     +.arrow {
-        padding-top: 5rem;
+        padding-top: 12rem;
     }
 }
 /* local_12
 ------------------------------------*/
 .local_12 {
-    background: url("../image/background_02.png") no-repeat center 7.3rem;
+    margin-top: 10rem;
+    background: url("../image/background_06.png") no-repeat center 7.3rem;
     font-family: $font-micho;
+    padding: 0 3.4rem;
     .news01 {
         background: $color-a;
-        width: 100%;
-        max-width: 84.2rem;
-        margin: auto;
         position: relative;
         padding: 1.8rem;
         box-shadow: .2rem .1rem 0 rgba(0, 0, 0, 0.5);
         .text {
             padding-top: 3.8rem;
-            width: 31.5rem;
         }
         .imgThumb {
-            position: absolute;
-            right: -1.4rem;
-            bottom: 0.2rem;
+            position: relative;
+            right: -4rem;
         }
     }
     span {
@@ -500,12 +498,10 @@
         line-height: 3rem;
     }
     .listItems {
-        padding-top: 4rem;
-        width: 100%;
-        max-width: 84.2rem;
+        padding-top: 4.5rem;
         margin: auto;
         + .note {
-            padding: 2rem 0 2.5rem 6.2rem;
+            padding: 2rem 0 2.5rem 0rem;
         }
     }
     .title_h3 {
@@ -513,23 +509,18 @@
     }
     .items {
         box-shadow: .2rem .1rem 0 rgba(0, 0, 0, 0.6);
-        float: left;
-        width: 100%;
-        max-width: 40.6rem;
         background: $color-a;
         padding: 1.8rem 1.4rem;
-        &:nth-child(even) {
-            margin-left: 3rem;
-        }
-        &:nth-child(-n+2) {
-            margin-bottom: 2.7rem;
+        &:nth-child(-n+3) {
+            margin-bottom: 4.6rem;
         }
         .text {
             padding: 1.7rem 0 1.4rem;
         }
     }
     .note {
-        font-size: 0.96rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
     }
     .note2 {
         float: right;

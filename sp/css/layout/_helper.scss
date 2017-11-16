@@ -10,6 +10,9 @@
 .is_hidden {
     display: none;
 }
+.inline {
+    display: inline!important;
+}
 .bold {
     font-weight: bold;
 }
@@ -32,26 +35,18 @@
     border: 0!important;
 }
 
-.pb-40 {
-    padding-bottom: 4rem;
+.pb-25 {
+    padding-bottom: 2.5rem;
 }
-.pt-40 {
-    padding-top: 4rem;
-}
-
-.minH-307 {
-    min-height: 30.7rem;
-}
-.ml--17 {
-    margin-left: -1.7rem;
-}
-
 .w398 {
-    width: 39.8rem;
+    width: 100%;
+    max-width: 39.8rem;
 }
 .w435 {
-    width: 43.5rem;
+    width: 100%;
+    max-width: 43.5rem;
 }
-.w422 {
-    width: 42.2rem;
+.w383 {
+    width: 100%;
+    max-width: 38.3rem;
 }
