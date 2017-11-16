@@ -1,0 +1,57 @@
+/*======================================
+        Helper
+======================================*/
+.is_pc {
+    display: inherit;
+}
+.is_sp {
+    display: none;
+}
+.is_hidden {
+    display: none;
+}
+.bold {
+    font-weight: bold;
+}
+.tar {
+    text-align: right;
+}
+.tal {
+    text-align: left;
+}
+.tac {
+    text-align: center;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right!important;
+}
+.brd_none {
+    border: 0!important;
+}
+
+.pb-40 {
+    padding-bottom: 4rem;
+}
+.pt-40 {
+    padding-top: 4rem;
+}
+
+.minH-307 {
+    min-height: 30.7rem;
+}
+.ml--17 {
+    margin-left: -1.7rem;
+}
+
+.w398 {
+    width: 39.8rem;
+}
+.w435 {
+    width: 43.5rem;
+}
+.w422 {
+    width: 42.2rem;
+}
