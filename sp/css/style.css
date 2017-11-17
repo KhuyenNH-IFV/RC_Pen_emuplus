@@ -128,7 +128,7 @@ body {
 
 .ctrbtn2 {
   position: absolute;
-  bottom: 13.3rem;
+  bottom: 12%;
   left: 0;
   right: 0;
 }
@@ -548,6 +548,7 @@ body {
 .local_06 .listItems .contentItems:before {
   content: "";
   background: url("../image/icon_A.png") no-repeat;
+  background-size: cover;
   width: 7.7rem;
   height: 7.7rem;
   position: absolute;
@@ -568,6 +569,7 @@ body {
 }
 
 .local_06 .listItems .imgThumb {
+  width: 34%;
   position: absolute;
   right: 0;
   top: 0;
@@ -688,6 +690,14 @@ body {
 /* local_10
 ------------------------------------*/
 .local_10 .listFade {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 1.5rem;
 }
 
@@ -940,11 +950,11 @@ body {
 }
 
 /*-----------------------
-        Responsive for device < 780px
+        Responsive for device < 680px
 -----------------------------------------*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
   html {
-    font-size: 5px;
+    font-size: 7px;
   }
   .is_pc {
     display: none;
@@ -952,8 +962,110 @@ body {
   .is_sp {
     display: inherit;
   }
-  /*------------------- Typography_SP -------------------*/
-  /*------------------- Form_SP -------------------*/
+  .w100 {
+    width: 100% !important;
+  }
+  .maxW60 {
+    max-width: 60%;
+  }
+  .support {
+    width: 80%;
+  }
+  .ctrbtn {
+    width: 80%;
+  }
+  .ctrbtn2 {
+    width: 50%;
+    margin: auto;
+  }
+  .content_main .icon_dolar {
+    width: 22rem;
+  }
+  .content_main .sticker {
+    width: 32%;
+  }
+  .local_02 .wrapListNews {
+    padding-bottom: 1rem;
+  }
+  .local_02 .wrapListNews .listNews {
+    top: -5rem;
+  }
+  .local_02 .textNews {
+    max-width: inherit;
+    padding-right: 3rem;
+    width: 60%;
+  }
+  .local_02 .thumbImg {
+    width: 40%;
+  }
+  .local_03 {
+    padding-top: 5rem;
+  }
+  .local_03 .handScroll {
+    width: 50%;
+  }
+  .local_04 {
+    padding-bottom: 5rem;
+  }
+  .local_04 .wrapList .listFade01 {
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+  }
+  .local_04 .wrapList .listFade01 .itemsFade {
+    width: 44%;
+  }
+  .local_04 .wrapList .listFade01 .desFade {
+    width: 52%;
+  }
+  .local_05 .listAds02 {
+    background-size: contain;
+  }
+  .local_09 .listItems {
+    padding-top: 3rem;
+  }
+  .local_09 .listItems .text {
+    padding-right: 0;
+  }
+  .local_09 .listItems .items {
+    width: 55%;
+  }
+  .local_09 .listItems .items.avatar {
+    width: 40%;
+  }
+  .local_10 .listFade {
+    padding: 0 2rem;
+  }
+  .local_11 .arrowstep {
+    background-size: contain;
+  }
+}
+
+/*-----------------------
+        Responsive for device < 590px
+-----------------------------------------*/
+@media screen and (max-width: 590px) {
+  html {
+    font-size: 5px;
+  }
+  .local_02 .local_02_item01 .textNews {
+    max-width: 42rem;
+  }
+  .local_02 .local_02_item01 .thumbImg {
+    width: 50%;
+  }
+}
+
+/*-----------------------
+        Responsive for device < 350px
+-----------------------------------------*/
+@media screen and (max-width: 350px) {
+  .w398 {
+    width: 32rem;
+  }
+  .local_06 .listItems .imgThumb {
+    top: 28%;
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

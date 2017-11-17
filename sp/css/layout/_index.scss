@@ -288,6 +288,7 @@
             &:before {
                 content: "";
                 background: url('../image/icon_A.png') no-repeat;
+                background-size: cover;
                 width: 7.7rem;
                 height: 7.7rem;
                 position: absolute;
@@ -309,6 +310,7 @@
             }
         }
         .imgThumb {
+            width: 34%;
             position: absolute;
             right: 0;
             top: 0;
@@ -419,6 +421,8 @@
 ------------------------------------*/
 .local_10 {
     .listFade {
+        display: flex;
+        justify-content: center;
         @extend %clearfix;
         padding-top: 1.5rem;
         li {
