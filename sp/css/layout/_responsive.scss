@@ -5,79 +5,6 @@
     html {
         font-size: 7px;
     }
-    .is_pc {
-        display: none;
-    }
-    .is_sp {
-        display: inherit;
-    }
-    .w100 {
-        width: 100%!important;
-    }
-    .maxW60 {
-        max-width: 60%;
-    }
-    .support {
-        width: 80%;
-    }
-    .ctrbtn {
-        width: 80%;
-    }
-    .ctrbtn2 {
-        width: 50%;
-        margin: auto;
-    }
-    .content_main {
-        .icon_dolar {
-            width: 22rem;
-        }
-        .sticker {
-            width: 32%;
-        }
-    }
-    .local_02 {
-        .wrapListNews {
-            //  background-size: contain;
-            padding-bottom: 1rem;
-            .listNews {
-                top: -5rem;
-            }
-        }
-        .textNews {
-            max-width: inherit;
-            padding-right: 3rem;
-            width: 60%;
-        }
-        .thumbImg {
-            width: 40%;
-        }
-    }
-    .local_03 {
-        padding-top: 5rem;
-        .handScroll {
-            width: 50%;
-        }
-    }
-    .local_04 {
-        padding-bottom: 5rem;
-        .wrapList {
-            .listFade01 {
-                padding-left: 2rem;
-                padding-bottom: 6rem;
-                .itemsFade {
-                    width: 44%;
-                }
-                .desFade {
-                    width: 52%;
-                }
-            }
-        }
-    }
-    .local_05 {
-        .listAds02 {
-            background-size: contain;
-        }
-    }
     .local_09 {
         .listItems {
             padding-top: 3rem;
@@ -92,16 +19,6 @@
             }
         }
     }
-    .local_10 {
-        .listFade {
-            padding: 0 2rem;
-        }
-    }
-    .local_11 {
-        .arrowstep {
-            background-size: contain;
-        }
-    }
 }
 /*-----------------------
         Responsive for device < 590px
@@ -109,32 +26,5 @@
 @media screen and (max-width: 590px) {
     html {
         font-size: 5px;
-    }
-
-    .local_02 {
-        .local_02_item01 {
-            .textNews {
-                max-width: 42rem;
-            }
-            .thumbImg {
-                width: 50%;
-            }
-        }
-    }
-}
-/*-----------------------
-        Responsive for device < 350px
------------------------------------------*/
-@media screen and (max-width: 350px) {
-    .w398 {
-        width: 32rem;
-    }
-    .local_06 {
-        .listItems {
-            .imgThumb {
-                top: 28%;
-                width: 30%;
-            }
-        }
     }
 }

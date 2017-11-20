@@ -20,25 +20,9 @@ function shinyButton() {
 }
 setTimeout('shinyButton()', 500);
 
-// Scroll back to top
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1000) {
-        $('#toTop').fadeIn(500);
-    } else {
-        $('#toTop').fadeOut(500);
-    }
-});
 
-$('#toTop').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, 500);
-    return false;
-});
-
-// Fade scroll
 window.onload = function() {
+    // Fade scroll
     $(window).scroll(function() {
         $('.fadeDown, .fadeLeft').each(function() {
             let elemPos = $(this).offset().top;
@@ -49,6 +33,17 @@ window.onload = function() {
             }
         });
     }).trigger("scroll");
+
+    // Scroll back to top
+    $(window).scroll(function() {
+        let elemPos = $('.flagScroll').offset().top;
+        let scroll = $(window).scrollTop();
+        if (scroll > elemPos) {
+            $('#toTop').fadeIn(500);
+        } else {
+            $('#toTop').fadeOut(500);
+        }
+    });
 }
 
 $(function() {

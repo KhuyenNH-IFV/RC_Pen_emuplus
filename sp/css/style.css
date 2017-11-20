@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.row_clear:after, #container:after, .listItems:after, .header:after, .local_04 .wrapList .listFade01:after, .local_05 .listAds01:after, .local_05 .listAds02:after, .local_10 .listFade:after, .local_11 .items:after, .local_12 .note2:after, .footer:after {
+.row_clear:after, #container:after, .listItems:after, .local_04 .wrapList .listFade01:after, .local_05 .listAds01:after, .local_05 .listAds02:after, .local_10 .listFade:after, .local_11 .items:after, .local_12 .note2:after, .footer:after {
   content: "";
   clear: both;
   display: block;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -68,7 +68,6 @@ body {
   overflow: hidden;
   position: relative;
   background: #fff;
-  max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
@@ -84,23 +83,24 @@ body {
 
 .title_B {
   color: #85294A;
-  font-size: 2.6rem;
+  font-size: 3.6rem;
   font-weight: bold;
   line-height: 1.4;
 }
 
 .text {
-  font-size: 2.2rem;
-  line-height: 3.5rem;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
 }
 
 .noteAds, .note {
   font-size: 2rem;
   text-align: left;
+  letter-spacing: 0;
 }
 
 .ctrbtn {
-  width: 64.8rem;
+  width: 82%;
   margin: auto;
   position: relative;
   text-align: center;
@@ -127,6 +127,8 @@ body {
 }
 
 .ctrbtn2 {
+  width: 50%;
+  margin: auto;
   position: absolute;
   bottom: 12%;
   left: 0;
@@ -213,9 +215,6 @@ body {
   transform: translate(0px, 0px);
 }
 
-/*======================================
-        Header
-======================================*/
 /*------------------------------------
 
             Page.html
@@ -246,6 +245,7 @@ body {
   z-index: 99;
   left: 5.2rem;
   top: 4rem;
+  width: 29%;
 }
 
 .content_main .dolar {
@@ -253,9 +253,7 @@ body {
   left: 1rem;
   overflow: hidden;
   position: absolute;
-  width: 100%;
-  max-width: 23rem;
-  height: 23rem;
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -266,7 +264,7 @@ body {
   z-index: 10;
   display: block;
   width: 8rem;
-  height: 45rem;
+  height: 55rem;
   margin-top: .7rem;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -282,6 +280,7 @@ body {
   position: absolute;
   right: .5rem;
   bottom: 1rem;
+  width: 32%;
 }
 
 .content_main .sticker img {
@@ -302,7 +301,7 @@ body {
 
 .local_02 .textNews {
   font-size: 2.8rem;
-  line-height: 3.5rem;
+  line-height: 3.6rem;
 }
 
 .local_02 .local_02_item01 {
@@ -328,6 +327,7 @@ body {
 .local_02 .wrapListNews {
   padding: 5.5rem 4rem;
   background: url("../image/background_01.png") no-repeat center 24rem;
+  background-size: 100% 100%;
   min-height: 200.1rem;
 }
 
@@ -356,12 +356,12 @@ body {
 }
 
 .local_02 .textNews {
-  width: 100%;
-  max-width: 37rem;
+  width: 58%;
   float: left;
 }
 
 .local_02 .thumbImg {
+  width: 40%;
   float: right;
 }
 
@@ -372,6 +372,7 @@ body {
 }
 
 .local_03 .handScroll {
+  width: 50%;
   position: absolute;
   top: 40%;
 }
@@ -385,6 +386,7 @@ body {
 .local_04 {
   padding-top: 3.8rem;
   background: url("../image/background_02.png") no-repeat center 23rem;
+  background-size: 100% 100%;
   padding-bottom: 11.3rem;
 }
 
@@ -398,7 +400,7 @@ body {
 
 .local_04 .wrapList .listFade01 {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 5%;
 }
 
 .local_04 .wrapList .listFade01:first-child .desFade {
@@ -406,17 +408,21 @@ body {
   margin-left: 1rem;
 }
 
+.local_04 .wrapList .listFade01:nth-child(2) {
+  margin-top: 1%;
+}
+
 .local_04 .wrapList .listFade01:nth-child(2) .itemsFade {
   margin-left: 1rem;
-  margin-top: -6rem;
+  margin-top: -2%;
 }
 
 .local_04 .wrapList .listFade01:nth-child(3) {
-  margin-top: 2rem;
+  margin-top: 2%;
 }
 
 .local_04 .wrapList .listFade01:nth-child(3) .itemsFade {
-  margin-top: -4.4rem;
+  margin-top: -7%;
 }
 
 .local_04 .wrapList .listFade01:nth-child(4) {
@@ -434,10 +440,12 @@ body {
 }
 
 .local_04 .wrapList .listFade01 .itemsFade {
+  width: 47%;
   float: left;
 }
 
 .local_04 .wrapList .listFade01 .desFade {
+  width: 50%;
   float: left;
 }
 
@@ -455,6 +463,7 @@ body {
 .local_05 .local_05_content {
   position: relative;
   background: url("../image/background_03.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .local_05 .local_05_content .noteAds {
@@ -463,7 +472,7 @@ body {
 
 .local_05 .listAds01 {
   position: relative;
-  padding: 0 3.5rem 28.7rem 3.5rem;
+  padding: 0 3.5rem 36% 3.5rem;
 }
 
 .local_05 .listAds01 .title_h3 {
@@ -471,8 +480,8 @@ body {
 }
 
 .local_05 .textAds p {
-  font-size: 1.8rem;
-  line-height: 3rem;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
 }
 
 .local_05 .img_ads01 {
@@ -481,6 +490,8 @@ body {
 
 .local_05 .imgAds {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
@@ -493,18 +504,25 @@ body {
 .local_05 .listAds02 {
   margin-top: 5.8rem;
   background: url("../image/background_04.png") no-repeat;
+  background-size: 100% 100%;
   min-height: 95.6rem;
   position: relative;
+}
+
+.local_05 .listAds02 .imgAds {
+  position: relative;
+  margin-top: -5%;
 }
 
 .local_05 .listAds02 .title_h3 {
   position: relative;
   top: -2.7rem;
-  left: -5.2rem;
+  left: -2.2rem;
 }
 
 .local_05 .listAds02 .textAds {
-  padding: 0 8rem 0 10rem;
+  text-align: justify;
+  padding: 0 10% 0 12%;
 }
 
 .local_05 .listAds02 .textAds p {
@@ -522,6 +540,7 @@ body {
 }
 
 .local_05 .listAds02 .noteAds {
+  text-align: right;
   padding-top: 1.5rem;
 }
 
@@ -541,7 +560,7 @@ body {
 
 .local_06 .listItems .contentItems {
   position: relative;
-  padding: 3.1rem 5.2rem 4.1rem 12.6rem;
+  padding: 3.1rem 2.6rem 4.1rem 12.6rem;
   background: url("../image/background_news.png");
 }
 
@@ -566,13 +585,13 @@ body {
   display: block;
   height: 2.8rem;
   background: url("../image/bottom_shadow.png") no-repeat bottom;
+  background-size: 100% 100%;
 }
 
 .local_06 .listItems .imgThumb {
   width: 34%;
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin-top: 5%;
+  margin-left: 28%;
 }
 
 /* local_07
@@ -622,7 +641,7 @@ body {
 }
 
 .local_08 .listItems {
-  padding: 0 2.6rem;
+  padding: 2rem 2.6rem;
 }
 
 .local_08 .listItems li {
@@ -649,7 +668,7 @@ body {
 }
 
 .local_08 .listItems p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 3.1rem;
 }
 
@@ -666,12 +685,15 @@ body {
 }
 
 .local_09 .listItems {
+  width: 95%;
+  margin: auto;
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
   padding-left: 3.8rem;
 }
 
 .local_09 .listItems .items {
   float: left;
+  width: 50%;
 }
 
 .local_09 .listItems .text {
@@ -681,6 +703,12 @@ body {
 
 .local_09 .listItems .avatar {
   float: left;
+  padding-left: 3%;
+}
+
+.local_09 .logo_noguchi {
+  width: 45%;
+  margin: auto;
 }
 
 .local_09 + .arrow {
@@ -690,6 +718,7 @@ body {
 /* local_10
 ------------------------------------*/
 .local_10 .listFade {
+  padding: 0 1%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -713,6 +742,7 @@ body {
 ------------------------------------*/
 .local_11 {
   background: url("../image/background_05.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .local_11 .listItems {
@@ -720,7 +750,7 @@ body {
 }
 
 .local_11 .items {
-  padding: 0 6.8rem 0 7.3rem;
+  padding: 0 9% 0 9%;
 }
 
 .local_11 .avatar {
@@ -731,6 +761,7 @@ body {
 .local_11 .arrowstep {
   padding-bottom: 10rem;
   background: url("../image/arrow_step.png") no-repeat bottom;
+  background-size: 100%;
 }
 
 .local_11 .description {
@@ -763,6 +794,7 @@ body {
 .local_12 {
   margin-top: 10rem;
   background: url("../image/background_06.png") no-repeat center 7.3rem;
+  background-size: 100% 100%;
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
   padding: 0 3.4rem;
 }
@@ -790,8 +822,8 @@ body {
 
 .local_12 .text {
   text-align: justify;
-  font-size: 1.7rem;
-  line-height: 3rem;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
 }
 
 .local_12 .listItems {
@@ -801,6 +833,7 @@ body {
 
 .local_12 .listItems + .note {
   padding: 2rem 0 2.5rem 0rem;
+  text-align: center;
 }
 
 .local_12 .title_h3 {
@@ -811,7 +844,7 @@ body {
   -webkit-box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.6);
   background: #ffffff;
-  padding: 1.8rem 1.4rem;
+  padding: 3.6rem 2.4rem;
 }
 
 .local_12 .items:nth-child(-n+3) {
@@ -819,17 +852,17 @@ body {
 }
 
 .local_12 .items .text {
-  padding: 1.7rem 0 1.4rem;
+  padding: 1.7rem 3% 1.4rem;
 }
 
 .local_12 .note {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 0;
 }
 
 .local_12 .note2 {
   float: right;
-  font-size: 1.66rem;
+  font-size: 3.6rem;
 }
 
 /* local_13
@@ -848,16 +881,16 @@ body {
 .footer {
   text-align: center;
   border-bottom: 2.2rem solid #44AA80;
+  padding-bottom: 20rem;
 }
 
 .footer .ingredient {
   letter-spacing: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   border: 2px solid #000;
   margin: 2.5rem auto;
   width: 90%;
-  height: 5rem;
-  line-height: 5rem;
+  line-height: 3.2rem;
 }
 
 .footer .info {
@@ -876,6 +909,7 @@ body {
 }
 
 .support {
+  display: none;
   position: absolute;
   position: fixed;
   bottom: 0;
@@ -934,6 +968,14 @@ body {
   padding-bottom: 2.5rem;
 }
 
+.w100 {
+  width: 100% !important;
+}
+
+.w50 {
+  width: 50%;
+}
+
 .w398 {
   width: 100%;
   max-width: 39.8rem;
@@ -956,70 +998,6 @@ body {
   html {
     font-size: 7px;
   }
-  .is_pc {
-    display: none;
-  }
-  .is_sp {
-    display: inherit;
-  }
-  .w100 {
-    width: 100% !important;
-  }
-  .maxW60 {
-    max-width: 60%;
-  }
-  .support {
-    width: 80%;
-  }
-  .ctrbtn {
-    width: 80%;
-  }
-  .ctrbtn2 {
-    width: 50%;
-    margin: auto;
-  }
-  .content_main .icon_dolar {
-    width: 22rem;
-  }
-  .content_main .sticker {
-    width: 32%;
-  }
-  .local_02 .wrapListNews {
-    padding-bottom: 1rem;
-  }
-  .local_02 .wrapListNews .listNews {
-    top: -5rem;
-  }
-  .local_02 .textNews {
-    max-width: inherit;
-    padding-right: 3rem;
-    width: 60%;
-  }
-  .local_02 .thumbImg {
-    width: 40%;
-  }
-  .local_03 {
-    padding-top: 5rem;
-  }
-  .local_03 .handScroll {
-    width: 50%;
-  }
-  .local_04 {
-    padding-bottom: 5rem;
-  }
-  .local_04 .wrapList .listFade01 {
-    padding-left: 2rem;
-    padding-bottom: 6rem;
-  }
-  .local_04 .wrapList .listFade01 .itemsFade {
-    width: 44%;
-  }
-  .local_04 .wrapList .listFade01 .desFade {
-    width: 52%;
-  }
-  .local_05 .listAds02 {
-    background-size: contain;
-  }
   .local_09 .listItems {
     padding-top: 3rem;
   }
@@ -1032,12 +1010,6 @@ body {
   .local_09 .listItems .items.avatar {
     width: 40%;
   }
-  .local_10 .listFade {
-    padding: 0 2rem;
-  }
-  .local_11 .arrowstep {
-    background-size: contain;
-  }
 }
 
 /*-----------------------
@@ -1047,25 +1019,4 @@ body {
   html {
     font-size: 5px;
   }
-  .local_02 .local_02_item01 .textNews {
-    max-width: 42rem;
-  }
-  .local_02 .local_02_item01 .thumbImg {
-    width: 50%;
-  }
 }
-
-/*-----------------------
-        Responsive for device < 350px
------------------------------------------*/
-@media screen and (max-width: 350px) {
-  .w398 {
-    width: 32rem;
-  }
-  .local_06 .listItems .imgThumb {
-    top: 28%;
-    width: 30%;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
